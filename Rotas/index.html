@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav navbar">
+            <h1 class="title">Rotas</h1>
+            <div class="div-link nav-list">
+               <li><a  href="#">Inicio</a></li> 
+               <li><a  href="#">Sobre o projecto</a></li> 
+               <li><a  href="#">Documentação</a></li> 
+               <li><a  href="#">Contacto</a></li> 
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>   
+    </nav>
+    <section id="hero-section">
+        <div class="div-hero">
+            <div class="text-hero">
+                <h2 class="title-hero">
+                    A Soluçã Para Achar <span>Rotas</span>  De <br> <strong class="strong-title-hero">Chaspas Em Moçambique!</strong> 
+                </h2>
+                <p class="paragraph-hero">
+                    Rotas API é uma API para achar dados das paragens e <br> chapas, e suas rotas,incluindo ligações.
+                </p>
+                <div class="bottom-acessar-repositorio">
+                    <a href="#">Acessar repositorio <img src="imagens/Arrow 1.png" alt="" style="width: 11px; height: 11px;"></a>
+                </div>
+            </div>
+            <div class="img-hero">
+                <div class="div-img-hero">
+                    <img src="imagens/Vector.png" alt="" class="rotas-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="exemplos">
+        <div class="wrapper">
+            <div class="pieces">
+                <div class="piece first"></div>
+                <div class="piece second"></div>
+                <div class="piece third"></div>
+                <div class="piece fourth"></div>
+                <div class="piece fifth"></div>
+                <div class="piece sixth"></div>
+            </div>
+        </div>
+    </section>    
+    <section id="exemplos">
+        <div class="exemplo-continer">
+            <div class="exeplo-text">
+                <h2 class="title-exemplo">EXEMPLO</h2>
+                <p class="paragrafo-exemplo">Exemplo de uma aplicação mobile desenvolvida usando React Native e <br> consumindo a API</p>
+                <div class="bottom-acessar-repositorio">
+                    <a href="#">Ver exemplo<img src="imagens/Arrow 1.png" alt="" style="width: 11px; height: 11px;"></a>
+                </div>
+            </div>
+            <div class="bloco">
+            </div>
+        </div>
+    </section>
+    <section class="documentacao">
+        <div class="exemplo-continer">
+            <div class="bloco-2"></div>
+            <div class="exeplo-text">
+                <h2 class="title-exemplo title-documentacao">DOCUMENTACAO</h2>
+                <p class="paragrafo-exemplo"> Documentação ainda não foi feita, mas com sua ajuda pode ser <br>possivel. Veja o repositorio.</p>
+                <div class="bottom-acessar-repositorio">
+                    <a href="#">Ver exemplo<img src="imagens/Arrow 1.png" alt="" style="width: 11px; height: 11px;"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto">
+        <h2 class="contacto-title"> CONTACTO</h2>
+        <p class="contacto-paragrafo">Sinta-se avontade para entrar em conta, para esclarecer duvidas ou <br> qualquer outra coisa!</p>
+        <div class="div-contacto"></div>
+    </section>
+    <section class="pronto-para-contribuir">
+        <h2 class="title-pronto-para-contribuir">Pronto Para Contribuir?</h2>
+        <p class="paragrafo-pronto-para-contribuir">Sinta-se avontade para entrar em conta, para esclarecer duvidas ou <br> qualquer outra coisa!</p>
+        <div class="boloco-3"></div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('mobile-menu').addEventListener('click', function() {
+                document.querySelector('.nav-list').classList.toggle('show');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+    var mobileMenu = document.getElementById('mobile-menu');
+    var navList = document.querySelector('.nav-list');
+
+    if (mobileMenu && navList) {
+        mobileMenu.addEventListener('click', function () {
+            navList.classList.toggle('show');
+        });
+    }
+});
+        </script>
+</body>
+</html>
